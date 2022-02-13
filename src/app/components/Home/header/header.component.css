@@ -1,0 +1,25 @@
+.titleBox{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    background-color: #212121;
+    min-height: 10rem;
+	border-style: solid;
+    border-color: #016933;
+}
+
+.avatar{
+	background-image: url(./badLogo.png);
+	background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 200px;
+    width: 250px;
+    border-style: solid;
+    border-color: seashell;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

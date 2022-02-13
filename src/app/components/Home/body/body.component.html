@@ -1,0 +1,35 @@
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-sm-6 col-lg-4">
+        <div class="form-group">
+        <input [ngClass]="['input','form-control']" type="search" placeholder="Nombre de actor" [(ngModel)] ="filterPost" name="filterPost">
+      </div>
+      </div>
+    </div>
+ 
+ 
+  <div class="col-sm">
+  <div class="container">
+    <div class="row">
+        <div class="col-md" *ngFor="let actor of actorsArray | filter:filterPost" (click)="onClick(actor.char_id)">
+                <div class="card">
+                        <img [src]="actor.img" class="card-img-top" alt="...">
+                    <div>
+                        <div class="card-body">
+                          <h5 class="card-title">{{actor.name}}</h5>
+                          <ul class="card-text">                          
+                           <li>Ocupacion: {{actor.occupation}}</li>
+                           <li>Alias: {{actor.nickname}}</li>
+                           <li>Estado: {{actor.status}}</li>
+                          </ul>
+                        </div>
+                    </div>
+               </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+  
